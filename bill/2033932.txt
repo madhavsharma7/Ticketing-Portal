@@ -1,0 +1,18 @@
+
+	MHB Online Bus Ticket Booking
+	 Phone No. 98*******0, Delhi-110033
+========================================
+ Customer Name: hardika khurana
+ Ph no. : 7056305555
+ Bill No. : 2033932			Date: 02/03/2023
+========================================
+        
+hardika khurana 0			Rs. 2267.724
+hardika khurana 1			Rs. 2267.724
+hardika khurana 2			Rs. 2267.724
+hardika khurana 3			Rs. 2267.724
+========================================
+ Net Pay (Including GST)		Rs.9070.896
+========================================
+
+        
