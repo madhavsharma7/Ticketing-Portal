@@ -1,0 +1,16 @@
+
+	MHB Online Bus Ticket Booking
+	 Phone No. 98*******0, Delhi-110033
+========================================
+ Customer Name: simmi khurana
+ Ph no. : 1234567890
+ Bill No. : 1156048			Date: 01/03/2023
+========================================
+        
+simmi khurana 0			Rs. 224.2
+simmi khurana 1			Rs. 224.2
+========================================
+ Net Pay (Including GST)		Rs.448.4
+========================================
+
+        

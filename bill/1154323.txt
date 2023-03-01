@@ -1,0 +1,22 @@
+
+	Tech Love V- Online Bus ticket booking
+	 Phone No. 83*******0, Delhi-110018
+========================================
+ Customer Name: simmi khan
+ Ph no. : 1234567890
+ Bill No. : 1154323			Date: 01/03/2023
+========================================
+        
+simmi khan 0			Rs. 436.6
+simmi khan 1			Rs. 436.6
+simmi khan 2			Rs. 436.6
+simmi khan 3			Rs. 436.6
+simmi khan 4			Rs. 436.6
+simmi khan 5			Rs. 436.6
+simmi khan 6			Rs. 436.6
+simmi khan 7			Rs. 436.6
+========================================
+ Net Pay (Includeing gst)		Rs.3492.8
+========================================
+
+        

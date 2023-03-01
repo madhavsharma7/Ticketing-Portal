@@ -1,0 +1,17 @@
+
+	MHB Online Bus Ticket Booking
+	 Phone No. 98*******0, Delhi-110033
+========================================
+ Customer Name: deepu kumar
+ Ph no. : 9810688575
+ Bill No. : 1155228			Date: 01/03/2023
+========================================
+        
+deepu kumar 0			Rs. 509.76
+deepu kumar 1			Rs. 509.76
+deepu kumar 2			Rs. 509.76
+========================================
+ Net Pay (Including GST)		Rs.1529.28
+========================================
+
+        

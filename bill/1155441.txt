@@ -1,0 +1,19 @@
+
+	MHB Online Bus Ticket Booking
+	 Phone No. 98*******0, Delhi-110033
+========================================
+ Customer Name: madhav sharma
+ Ph no. : 1234567890
+ Bill No. : 1155441			Date: 01/03/2023
+========================================
+        
+madhav sharma 0			Rs. 152.22
+madhav sharma 1			Rs. 152.22
+madhav sharma 2			Rs. 152.22
+madhav sharma 3			Rs. 152.22
+madhav sharma 4			Rs. 152.22
+========================================
+ Net Pay (Including GST)		Rs.761.1
+========================================
+
+        

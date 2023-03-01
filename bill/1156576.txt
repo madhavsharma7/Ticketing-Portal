@@ -1,0 +1,18 @@
+
+	MHB Online Bus Ticket Booking
+	 Phone No. 98*******0, Delhi-110033
+========================================
+ Customer Name: banti jha
+ Ph no. : 9810688575
+ Bill No. : 1156576			Date: 01/03/2023
+========================================
+        
+banti jha 0			Rs. 186.44
+banti jha 1			Rs. 186.44
+banti jha 2			Rs. 186.44
+banti jha 3			Rs. 186.44
+========================================
+ Net Pay (Including GST)		Rs.745.76
+========================================
+
+        

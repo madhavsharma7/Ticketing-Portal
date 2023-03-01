@@ -1,0 +1,71 @@
+import sqlite3
+import time
+from tkinter import*
+from tkinter import messagebox
+from tkcalendar import Calendar, DateEntry
+import os
+
+class creditcard:
+    def __init__(self, root):
+        self.win=root
+        self.win.config(bg="#E3CF57")
+        self.win.geometry("628x450")
+        self.win.resizable(False,False)
+        self.win.title("Credit Card")
+        
+        self.frame=Frame(self.win,bg='white',bd=10,relief="raised",width=400,height=50).place(x=130,y=1)
+        self.lb=Label(self.frame,bg='white',fg='blue',text="CREDIT CARD",font=20).place(x=260,y=10)
+        self.frame2=Frame(self.win,bd=10,relief="raised",width=600,height=350,bg="lightblue2").place(x=10,y=70)
+
+        self.frame3=Frame(self.win,bg='white',bd=9,relief="raised",width=400,height=45).place(x=100,y=90)
+        self.lb2=Label(self.frame3,bg='white',text="CARD DETAILS",font=20).place(x=250,y=95)
+
+        self.us=StringVar()
+        self.lb=Label(self.frame2,fg='indigo',text="Card Number",font=20,width=12).place(x=130,y=150)
+        self.pas=StringVar()
+        self.lb2=Label(self.frame2,fg='indigo',text="Pin",font=20,width=12).place(x=130,y=200)
+        self.cvv=StringVar()
+        self.lb2=Label(self.frame2,fg='indigo',text="CVV",font=20,width=12).place(x=130,y=250)
+        self.exp=StringVar()
+        self.lb2=Label(self.frame2,fg='indigo',text="Expiry Date",font=20,width=12).place(x=130,y=300)
+        
+
+        self.tx=Entry(self.frame2,textvariable=self.us,font=5).place(x=320,y=150)
+        self.tx2=Entry(self.frame2,textvariable=self.pas,font=5).place(x=320,y=200)
+        self.tx3=Entry(self.frame2,textvariable=self.cvv,font=5).place(x=320,y=250)
+        self.tx4=DateEntry(self.frame2,font=5).place(x=320,y=300)
+
+
+        self.btn=Button(self.frame2,bg='white',fg='blue',text="SUBMIT",command=self.submit,font=20,bd=9,relief="raised",width=20).place(x=190,y=350)
+    def submit(self):
+        con = sqlite3.connect(database=r'ticketing.db')
+        cur = con.cursor()
+        if self.us.get()=="" or self.pas.get()=="" or self.cvv.get()=="" :
+            messagebox.showerror("warning","Please fill all details",parent=self.win)
+        else:
+            try:
+                value='credit card'
+                cur.execute("select pid from passenger ORDER BY loginDate DESC,loginTime DESC")
+                res1=cur.fetchone()
+                self.bookingid=int(time.strftime("%H%M%S"))+int(time.strftime("%d%m%Y"))
+                cur.execute("update passenger set pstatus=? ,bookingid=? where pid=?",(value,self.bookingid,res1[0]))
+                con.commit()
+                cur.execute("select * from passenger ORDER BY loginDate DESC,loginTime DESC")
+                res=cur.fetchone()
+                cur.execute("select * from Confirmbooking where pid=?",(res[0],))
+                show=cur.fetchone()
+                if show == None:
+                    cur.execute("insert into Confirmbooking values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(res[0],res[1],res[2],res[3],res[4],res[5],res[6],res[7],res[8],res[9],res[10],res[11],res[12],res[13],res[14],res[15],res[16],res[17],res[18],res[19],res[20],res[21]))
+                    con.commit()
+                cur.execute("delete from passenger where pid=?",(res[0],))
+                con.commit()
+            except Exception as ex:
+                messagebox.showerror("Error",ex,parent=self.win)
+            messagebox.showinfo("Successfully","payment done successfully",parent=self.win)
+            self.win.destroy()
+            os.system("printticket.py")
+        con.close()
+if __name__ == "__main__":
+    root = Tk()
+    obj = creditcard(root)
+    root.mainloop()
