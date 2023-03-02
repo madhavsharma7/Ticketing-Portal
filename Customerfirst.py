@@ -409,6 +409,7 @@ class customerclass:
         except Exception as ex:
             messagebox.showerror("Warning", ex, parent=self.fareWin)
             
+        #row1 of kms convert becouse it cant converting the string value    
         kms=float(self.bus_data[2].replace('\t', '').replace('\xa0', '').replace(',', ''))
         petrol=float(self.bus_data[10])
         totseat=float(self.bus_data[7])
