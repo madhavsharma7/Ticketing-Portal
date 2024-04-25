@@ -29,7 +29,7 @@ The Python Bus Ticket Booking System is a desktop application built using Python
    - Pillow: Install Pillow using `pip install pillow`.
    - PyMySQL: Install PyMySQL using `pip install pymysql`.
 3. Run the `database.py` file: Before running the main application, open and run the `database.py` file to create the necessary database tables on your local machine.
-4. Start the application: `python main.py`
+4. Start the application: `python Customerfirst.py`
 5. Use the application to book bus tickets.
 
 ## Future Improvements
